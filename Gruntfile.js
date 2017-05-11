@@ -31,11 +31,21 @@ module.exports = function(grunt) {
           dest: '_build'
         }]
       }
+    },
+
+    less: {
+      style: {
+        files: {
+          '_build/css/style.css': 'less/style.less'
+        }
+      }
     }
+
   });
 
   grunt.registerTask('build', [
     'clean',
-    'copy'
+    'copy',
+    'less'
   ]);
 };
