@@ -2,11 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>automotive</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Hello World!!!</h1>
+    <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-header__navigation">
+          <a class="page-header__logo" href="#">
+            <img class="page-header__logo-img" src="./img/logo-header.png" width="289" height="94" alt="automotive">
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">About</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Services</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Gallery</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__promo">
+          <strong class="page-header__promo-title">Sell your <span>car now</span></strong>
+          <p class="page-header__promo-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+          <form class="promo-form" action="#" method="post">
+            <h3 class="promo-form__title">Request a quote</h3>
+            <input class="promo-form__input-text" type="text" name="" value="" placeholder="Full Name">
+            <input class="promo-form__input-text" type="email" name="" value="" placeholder="Email address">
+            <input class="promo-form__input-text" type="tel" name="" value="" placeholder="Phone Number">
+            <input class="promo-form__input-text" type="text" name="" value="" placeholder="Country">
+            <input class="promo-form__input-checkbox" type="checkbox" name="" id="accept">
+            <label class="promo-form__label-checkbox" for="accept">I accept the terms & conditions</label>
+            <button class="promo-form__button" type="submit" name="button">Send</button>
+          </form>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

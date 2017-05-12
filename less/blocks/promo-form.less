@@ -1,0 +1,93 @@
+.promo-form {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 27px 24px 28px 24px;
+  width: 352px;
+  border-radius: 5px;
+  background-color: @clr_white;
+  box-shadow: 0 5px 20px 5px #898989;
+}
+
+.promo-form__title {
+  color: @clr_dark-blue;
+  font-family: @fnt_Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 0px 37px 0px;
+  padding: 0;
+}
+
+.promo-form__input-text {
+  display: block;
+  color: @clr_dark-blue;
+  font-family: @fnt_PTSerif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  box-sizing: border-box;
+  margin: 0px 0px 16px 0px;;
+  padding: 16px 15px 16px 15px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  background-color: @clr_gray;
+}
+
+.promo-form__input-checkbox {
+  display: none;
+}
+
+.promo-form__label-checkbox {
+  display: block;
+  position: relative;
+  color: @clr_dark-blue;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 20px 45px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 3px;
+    width: 19px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: @clr_gray;
+  }
+}
+
+.promo-form__input-checkbox:checked + .promo-form__label-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 15px;
+  height: 8px;
+  border: 3px solid @clr_dark-blue;
+  border-top-width: 0;
+  border-right-width: 0;
+  transform: rotate(-45deg);
+}
+
+.promo-form__button {
+  color: @clr_white;
+  display: inline-block;
+  font-family: @fnt_Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  padding: 16px 0px 16px 0px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  background-color: @clr_red;
+}
